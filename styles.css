@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --aFont: 'Josefin Sans', sans-serif;
+    --bFont: 'Rubik', sans-serif;
+    --cFont: 'Raleway', sans-serif;
+
+    --accentColor: rgb(0, 49, 82);
+    --accentColoLight: rgb(0, 108, 180);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: black;
+    /* color: turquoise; */
+    /* color: goldenrod; */
+    color: red;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--bFont);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+/* ///////////////////////// Header Section Styling ///////////////////////// */
+
+header {
+    height: 15vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+
+header h1 {
+    font-family: var(--aFont);
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* /////////////////////////// Hero Section Styling /////////////////////////// */
+
+.hero {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .heroImg {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.hero .heroImg img {
+    height: 70%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero .languages {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.hero .languages .languagesInner {
+    width: 85%;
+    height: 50%;
+    /* border: 2px solid rgb(34, 53, 78); */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    gap: 0rem;
+    flex-wrap: wrap;
+}
+
+.hero .languages .languagesInner .tab {
+    background-color: var(--accentColor);
+    width: 250px;
+    height: 150px;
+    border-radius: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .languages .languagesInner .tab1 {
+    background-color: var(--accentColoLight);
+    width: 250px;
+    height: 150px;
+    border-radius: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .languages .languagesInner .tab h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--aFont);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .languages .languagesInner .tab h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--aFont);
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero .languages .languagesInner .tab p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--aFont);
+    color: white;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* languages-tabs hover functions */
+.hero .languages .languagesInner .tab:hover {
+    background-color: white;
+}
+.hero .languages .languagesInner .tab:hover h1 {
+    opacity: 0;
+}
+.hero .languages .languagesInner .tab:hover h2 {
+    opacity: 1;
+    color: black;
+}
+.hero .languages .languagesInner .tab:hover p {
+    opacity: 1;
+    color: black;
+}
+
+.hero .languages h3 {
+    display: block;
+    width: 750px;
+    height: 50px;
+    font-size: 1.5rem;
+    border: 2px solid var(--accentColor);
+    color: var(--accentColor);
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .languages h3:hover {
+    border: 2px solid var(--accentColoLight);
+    color: var(--accentColoLight);
+}
+
+/* ////////////////////// SearchBarSection Section Styling //////////////////// */
+
+.searchBarSection {
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(209, 209, 209);
+}
+
+.searchBarSection .searchBarSectionInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.searchBarSection input {
+    width: 800px;
+    height: 50px;
+    font-size: 2rem;
+    font-family: var(--bFont);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.searchBarSection .searchBtn {
+    height: 50px;
+    width: 200px;
+    background-color: var(--accentColor);
+    color: white;
+    border: none;
+    font-family: var(--aFont);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchBarSection .searchBtn:hover {
+    background-color: var(--accentColoLight);
+    color: white;
+}
+
+/* ////////////////////// WikiTools Section Styling //////////////////// */
+
+.wikiTools {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.wikiTools .heading {
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.wikiTools .heading h1 {
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wikiTools .tools {
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.wikiTools .tools .toolsInner {
+    width: 85%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    left: 53.3%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 0rem;
+    flex-wrap: wrap;
+}
+
+.wikiTools .tools .toolsInner .tab {
+    background-color: var(--accentColor);
+    width: 250px;
+    height: 150px;
+    border-radius: 0px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.wikiTools .tools .toolsInner .tab h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: var(--aFont);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.wikiTools .tools .toolsInner .tab h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--bFont);
+    color: white;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* tools-tabs hover functions */
+.wikiTools .tools .toolsInner .tab:hover {
+    background-color: white;
+}
+.wikiTools .tools .toolsInner .tab:hover h1 {
+    opacity: 0;
+}
+.wikiTools .tools .toolsInner .tab:hover h2 {
+    opacity: 1;
+    color: black;
+}
+.wikiTools .tools .toolsInner .tab:hover p {
+    opacity: 1;
+    color: black;
+}
+
+/* ////////////////////// AboutWiki Section Styling //////////////////// */
+
+.aboutWiki {
+    height: 40vh;
+    width: 100vw;
+}
+
+.aboutWiki .about {
+    font-size: 1.7rem;
+    color: black;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 2rem;
+    cursor: default;
+}
+
+.aboutWiki .donation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--accentColor);
+    font-size: 1.7rem;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutWiki .donation a:hover {
+    background-color: var(--accentColoLight);
+}
+
+.aboutWiki .download {
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+}
+
+.aboutWiki .download .appLogo {
+    font-family: var(--cFont);
+    font-size: 3rem;
+    position: absolute;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: var(--accentColor);
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutWiki .download p {
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutWiki .download h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutWiki .download .fa-google-play {
+    color: black;
+    font-size: 4rem;
+    position: absolute;
+    top: 81%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutWiki .download .fa-apple {
+    color: black;
+    font-size: 5rem;
+    position: absolute;
+    top: 81%;
+    left: 52.5%;
+    transform: translate(-50%,-50%);
+}
+
+.aboutWiki .download i:hover {
+    color: var(--accentColor);
+}
+
+/* ////////////////////// Footer Section Styling //////////////////// */
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(209, 209, 209);
+    position: relative;
+}
+
+footer h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accentColor);
+    border-bottom: 2px solid rgb(209, 209, 209);
+}
+
+footer a:hover {
+    border-bottom: 2px solid var(--accentColor);
+}
+
+footer h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+footer h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
