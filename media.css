@@ -22,13 +22,25 @@
         height: 70%;
         overflow: hidden;
     }
-    .hero .languages .languagesInner {
-        width: 90%;
-        height: 74%;
+    .hero .languages .languagesInner1 {
         position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 12%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .hero .languages .languagesInner2 {
+        position: absolute;
+        top: 30.8%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .hero .languages .languagesInner3 {
+        position: absolute;
+        top: 49.7%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .hero .languages .languagesInner4 {
+        position: absolute;
+        top: 68.5%;
+        left: 50%;transform: translate(-50%,-50%);
     }
     .hero .languages .languagesInner .tab {
         width: 114.3px;
@@ -119,13 +131,30 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
     .wikiTools .tools .toolsInner {
-        width: 90%;
-        height: 80%;
+        width: 83.7%;
+        height: 124px;
+    }
+    .wikiTools .tools .toolsInner1 {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 15%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .wikiTools .tools .toolsInner2 {
+        position: absolute;
+        top: 36.91%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .wikiTools .tools .toolsInner3 {
+        position: absolute;
+        top: 58.7%;
+        left: 50%;transform: translate(-50%,-50%);
+    }
+    .wikiTools .tools .toolsInner4 {
+        position: absolute;
+        top: 80.6%;
+        left: 50%;transform: translate(-50%,-50%);
     }
     .wikiTools .tools .toolsInner .tab {
         width: 114.3px;
