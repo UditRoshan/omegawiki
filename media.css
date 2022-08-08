@@ -31,8 +31,8 @@
         transform: translate(-50%,-50%);
     }
     .hero .languages .languagesInner .tab {
-        width: 114.3px;
-        height: 100px;
+        width: 123.3px;
+        height: 110px;
     }
     .hero .languages .languagesInner .tab h1 {
         font-size: 1rem;
@@ -128,8 +128,8 @@
         transform: translate(-50%,-50%);
     }
     .wikiTools .tools .toolsInner .tab {
-        width: 113.2px;
-        height: 117px;
+        width: 123.2px;
+        height: 125px;
     }
     .wikiTools .tools .toolsInner .tab h1 {
         width: 100%;
